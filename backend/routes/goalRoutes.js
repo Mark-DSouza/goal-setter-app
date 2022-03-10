@@ -1,6 +1,4 @@
 const express = require('express')
-const { builtinModules } = require('module')
-
 const router = express.Router()
 
 router.get("/", (req, res) => {
@@ -26,9 +24,5 @@ router.delete("/:id", (req, res) => {
     message: `Delete goal ${req.params.id}`
   });
 });
-
-
-
-
 
 module.exports = router
